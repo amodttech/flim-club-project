@@ -1,0 +1,92 @@
+<%= form_with(model: film) do |form| %>
+  <% if film.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(film.errors.count, "error") %> prohibited this film from being saved:</h2>
+
+      <ul>
+        <% film.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Title %>
+    <%= form.text_field :Title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Year %>
+    <%= form.text_field :Year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Rated %>
+    <%= form.text_field :Rated %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Released %>
+    <%= form.text_field :Released %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Runtime %>
+    <%= form.text_field :Runtime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Genre %>
+    <%= form.text_field :Genre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Director %>
+    <%= form.text_field :Director %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Writer %>
+    <%= form.text_field :Writer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Actors %>
+    <%= form.text_field :Actors %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Plot %>
+    <%= form.text_field :Plot %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Language %>
+    <%= form.text_field :Language %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Country %>
+    <%= form.text_field :Country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Poster %>
+    <%= form.text_field :Poster %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imdbID %>
+    <%= form.text_field :imdbID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Website %>
+    <%= form.text_field :Website %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

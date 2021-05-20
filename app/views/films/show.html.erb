@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @film.Title %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @film.Year %>
+</p>
+
+<p>
+  <strong>Rated:</strong>
+  <%= @film.Rated %>
+</p>
+
+<p>
+  <strong>Released:</strong>
+  <%= @film.Released %>
+</p>
+
+<p>
+  <strong>Runtime:</strong>
+  <%= @film.Runtime %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @film.Genre %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @film.Director %>
+</p>
+
+<p>
+  <strong>Writer:</strong>
+  <%= @film.Writer %>
+</p>
+
+<p>
+  <strong>Actors:</strong>
+  <%= @film.Actors %>
+</p>
+
+<p>
+  <strong>Plot:</strong>
+  <%= @film.Plot %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @film.Language %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @film.Country %>
+</p>
+
+<p>
+  <strong>Poster:</strong>
+  <%= @film.Poster %>
+</p>
+
+<p>
+  <strong>Imdbid:</strong>
+  <%= @film.imdbID %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @film.Website %>
+</p>
+
+<%= link_to 'Edit', edit_film_path(@film) %> |
+<%= link_to 'Back', films_path %>

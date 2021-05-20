@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group: one
+  film: one
+  date_discussed: 2021-05-20 14:41:55
+
+two:
+  group: two
+  film: two
+  date_discussed: 2021-05-20 14:41:55

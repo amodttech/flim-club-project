@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @film_list.group_id %>
+</p>
+
+<p>
+  <strong>Film:</strong>
+  <%= @film_list.film_id %>
+</p>
+
+<p>
+  <strong>Date discussed:</strong>
+  <%= @film_list.date_discussed %>
+</p>
+
+<%= link_to 'Edit', edit_film_list_path(@film_list) %> |
+<%= link_to 'Back', film_lists_path %>
